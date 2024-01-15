@@ -1,16 +1,16 @@
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {  Routes, Route  , HashRouter} from 'react-router-dom';
 import QuoteGenerator from './pages/QuoteGenerator';
 import './App.css';
 
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
         <Routes>
             <Route path="/" element={<QuoteGenerator />} />                         
             <Route path="/quote" element={<QuoteGenerator />} />
         </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
