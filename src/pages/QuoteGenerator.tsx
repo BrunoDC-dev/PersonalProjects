@@ -1,5 +1,6 @@
 import { useEffect , useState} from 'react'
 import Card from '../components/Card'
+import React from 'react';
 
 interface Quote {
   _id: string;
