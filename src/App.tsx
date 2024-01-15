@@ -7,6 +7,7 @@ const App = () => {
   return (
     <Router>
         <Routes>
+            <Route path="/" element={<QuoteGenerator />} />                         
             <Route path="/random-quote" element={<QuoteGenerator />} />
         </Routes>
     </Router>
