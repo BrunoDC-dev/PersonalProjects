@@ -9,7 +9,7 @@ const App = () => {
     <>
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<QuoteGenerator />} />                         
+            <Route path="/" element={<MarkdownPreview />} />                         
             <Route path="/random-quote" element={<QuoteGenerator />} />
             <Route path="/markdown-live-previewer" element={<MarkdownPreview />} />
         </Routes>
