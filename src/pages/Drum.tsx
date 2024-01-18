@@ -8,9 +8,9 @@ const Drum = () => {
   const [power, setPower] = useState(false)
 
   return (
-    <main id="drum-machine" className="w-full h-screen bg-[#8d8d8d] flex items-center justify-center">
+    <main id="drum-machine" className="w-full h-screen bg-[#8d8d8d] flex flex-col items-center justify-center">
       <section  id="display"className="bg-[#B3B3B3] flex flex-col-reverse items-center justify-center border-4 border-[orange]
-      rounded-xl w-5/6 py-5 gap-4 lg:flex-row lg:px-6 lg:h-fit lg:max-w-[860px]">
+      rounded-xl w-5/6 py-5 gap-4 lg:flex-row lg:px-6 lg:h-1/2 lg:max-w-[860px]">
         <div  className="grid grid-cols-3 gap-2 w-5/6 lg:h-5/6">
             <Letter letter='Q' power={power} soundURL={mode=="Heater kit"?"https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3":
                                                                           "https://s3.amazonaws.com/freecodecamp/drums/Chord_1.mp3"}/>
@@ -41,6 +41,7 @@ const Drum = () => {
             </div>
         </div>
       </section>
+      <a href="https://portafolio-personal-lime.vercel.app/" className='text-white text-xs pt-3 md:text-lg'>By: Bruno De Cruz</a>
     </main>   
   )
 }
