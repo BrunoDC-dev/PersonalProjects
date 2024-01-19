@@ -5,17 +5,19 @@ import './App.css';
 import MarkdownPreview from './pages/MarkdownPreview';
 import Drum from './pages/Drum';
 import Calculator from './pages/Calculator';
+import Clock from './pages/Clock';
 
 const App = () => {
   return (
     <>
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<Calculator />} />                         
+            <Route path="/" element={<Clock />} />                         
             <Route path="/random-quote" element={<QuoteGenerator />} />
             <Route path="/markdown-live-previewer" element={<MarkdownPreview />} />
             <Route path="/drum" element={<Drum />} />
-            <Route path='calculator' element={<Calculator/>} />
+            <Route path='/calculator' element={<Calculator/>} />
+            <Route path='/clock' element={<Clock/>} />
         </Routes>
     </BrowserRouter>
     <HashRouter>
@@ -24,6 +26,7 @@ const App = () => {
             <Route path="/random-quote" element={<MarkdownPreview />} />
             <Route path="/drum" element={<Drum />} />
             <Route path='/calculator' element={<Calculator/>} />
+            <Route path='/clock' element={<Clock/>} />
         </Routes>
     </HashRouter>
 </>
